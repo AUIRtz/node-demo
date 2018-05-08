@@ -28,7 +28,12 @@ var server = http.createServer(function(request, response){
 
   console.log('得到 HTTP 路径为\n' + path)
   if(path == '/'){
-    response.write('Hi')
+    response.write('<!DOCTYPE>\n<html>' +
+	    '<head><link rel="stylesheet" href="/style.css">' +
+	    '</head><body>' +
+	    '<h1>Hello! Node.js</h1><p>芳胖子 XD</p>' +
+	    '<script src="/main.js"></script>' +
+	    '</body></html>')
     response.end()
   }else if(path == '/index'){
     response.setHeader('Content-type','text/html;charset=utf-8')
