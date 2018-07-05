@@ -31,7 +31,7 @@ var server = http.createServer(function(request, response){
     response.write('<!DOCTYPE>\n<html>' +
 	    '<head><link rel="stylesheet" href="/style.css">' +
 	    '</head><body>' +
-	    '<h1>Hello! Node.js</h1><p>芳胖子 XD</p>' +
+	    '<h1>Hello! Node.js</h1><p>text XD</p>' +
 	    '<script src="/main.js"></script>' +
 	    '</body></html>')
     response.end()
@@ -63,6 +63,5 @@ var server = http.createServer(function(request, response){
 })
 
 server.listen(port)
-console.log('监听 ' + port + ' 成功\n请用在空中转体720度然后用电饭煲打开封魔波 http://localhost:' + port)
 
 
